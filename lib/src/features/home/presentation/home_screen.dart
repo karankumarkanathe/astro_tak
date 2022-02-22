@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../generated/l10n.dart';
+import '../../../../values/assets.dart';
 import '../../ask_question/presentation/ask_question_tab.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -11,28 +12,31 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _buildAppBar(),
-      drawer: const Drawer(),
       body: IndexedStack(index: 2, children: _tabs),
-      bottomNavigationBar: _buildBottomNavigationBar(),
+      bottomNavigationBar: _buildBottomNavigationBar(context),
     );
   }
 
-  BottomNavigationBar _buildBottomNavigationBar() {
+  BottomNavigationBar _buildBottomNavigationBar(BuildContext context) {
     return BottomNavigationBar(currentIndex: 2, items: [
       BottomNavigationBarItem(
-          icon: const Icon(Icons.home), label: S.current.home),
-      BottomNavigationBarItem(
-          icon: const Icon(
-            Icons.chat,
+          icon: Image.asset(
+            Assets.home,
+            color: Colors.grey,
           ),
-          label: S.current.talk),
+          label: S.current.home),
       BottomNavigationBarItem(
-          icon: const Icon(Icons.question_answer),
+          icon: Image.asset(Assets.talk), label: S.current.talk),
+      BottomNavigationBarItem(
+          icon: Image.asset(
+            Assets.ask,
+            color: Theme.of(context).primaryColor,
+          ),
           label: S.current.askQuestion),
       BottomNavigationBarItem(
-          icon: const Icon(Icons.report), label: S.current.reports),
+          icon: Image.asset(Assets.reports), label: S.current.reports),
       BottomNavigationBarItem(
-          icon: const Icon(Icons.chat_sharp), label: S.current.chat)
+          icon: Image.asset(Assets.chat), label: S.current.chat)
     ]);
   }
 
@@ -46,9 +50,25 @@ class HomeScreen extends StatelessWidget {
 
   AppBar _buildAppBar() {
     return AppBar(
-      title: Text(S.current.appTitle),
+      title: Image.asset(
+        Assets.logo,
+        height: 50,
+      ),
+      leading: IconButton(
+        onPressed: () {},
+        icon: Image.asset(
+          Assets.hamburger,
+          scale: 2,
+        ),
+      ),
       actions: [
-        IconButton(onPressed: () {}, icon: const Icon(Icons.account_circle))
+        IconButton(
+          onPressed: () {},
+          icon: Image.asset(
+            Assets.profile,
+            height: 20,
+          ),
+        )
       ],
     );
   }
