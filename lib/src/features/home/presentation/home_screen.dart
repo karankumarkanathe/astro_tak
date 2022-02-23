@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../generated/l10n.dart';
 import '../../../../values/assets.dart';
 import '../../ask_question/presentation/ask_question_tab.dart';
+import '../../profile/presentation/profile_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   static const routeName = "/home_screen";
@@ -10,10 +11,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: _buildAppBar(),
-      body: IndexedStack(index: 2, children: _tabs),
-      bottomNavigationBar: _buildBottomNavigationBar(context),
+    return WillPopScope(
+      onWillPop: () async => false,
+      child: Scaffold(
+        appBar: _buildAppBar(context),
+        body: IndexedStack(index: 2, children: _tabs),
+        bottomNavigationBar: _buildBottomNavigationBar(context),
+      ),
     );
   }
 
@@ -48,7 +52,7 @@ class HomeScreen extends StatelessWidget {
     Container(),
   ];
 
-  AppBar _buildAppBar() {
+  AppBar _buildAppBar(BuildContext context) {
     return AppBar(
       title: Image.asset(
         Assets.logo,
@@ -63,7 +67,9 @@ class HomeScreen extends StatelessWidget {
       ),
       actions: [
         IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, ProfileScreen.routeName);
+          },
           icon: Image.asset(
             Assets.profile,
             height: 20,

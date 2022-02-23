@@ -190,6 +190,306 @@ class S {
       args: [],
     );
   }
+
+  /// `Logout`
+  String get logout {
+    return Intl.message(
+      'Logout',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `My Profile`
+  String get myProfile {
+    return Intl.message(
+      'My Profile',
+      name: 'myProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Order History`
+  String get orderHistory {
+    return Intl.message(
+      'Order History',
+      name: 'orderHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Basic Profile`
+  String get basicProfile {
+    return Intl.message(
+      'Basic Profile',
+      name: 'basicProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Friends and Family Profile`
+  String get friendsFamilyProfile {
+    return Intl.message(
+      'Friends and Family Profile',
+      name: 'friendsFamilyProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `DOB`
+  String get dob {
+    return Intl.message(
+      'DOB',
+      name: 'dob',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `TOB`
+  String get tob {
+    return Intl.message(
+      'TOB',
+      name: 'tob',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Relation`
+  String get relation {
+    return Intl.message(
+      'Relation',
+      name: 'relation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Family Member`
+  String get noFamilyMember {
+    return Intl.message(
+      'No Family Member',
+      name: 'noFamilyMember',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `+ Add New Profile`
+  String get btnTxtAddNewProfile {
+    return Intl.message(
+      '+ Add New Profile',
+      name: 'btnTxtAddNewProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add New Profile`
+  String get titleAddNewProfile {
+    return Intl.message(
+      'Add New Profile',
+      name: 'titleAddNewProfile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Enter valid name`
+  String get enterValidName {
+    return Intl.message(
+      'Enter valid name',
+      name: 'enterValidName',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date of Birth`
+  String get dateOfBirth {
+    return Intl.message(
+      'Date of Birth',
+      name: 'dateOfBirth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid DD`
+  String get invalidDD {
+    return Intl.message(
+      'Invalid DD',
+      name: 'invalidDD',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid MM`
+  String get invalidMM {
+    return Intl.message(
+      'Invalid MM',
+      name: 'invalidMM',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid YYYY`
+  String get invalidYYY {
+    return Intl.message(
+      'Invalid YYYY',
+      name: 'invalidYYY',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Time of Birth`
+  String get timeOfBirth {
+    return Intl.message(
+      'Time of Birth',
+      name: 'timeOfBirth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid HH`
+  String get invalidHH {
+    return Intl.message(
+      'Invalid HH',
+      name: 'invalidHH',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `AM`
+  String get am {
+    return Intl.message(
+      'AM',
+      name: 'am',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `PM`
+  String get pm {
+    return Intl.message(
+      'PM',
+      name: 'pm',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Place of Birth`
+  String get placeOfBirth {
+    return Intl.message(
+      'Place of Birth',
+      name: 'placeOfBirth',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Gender`
+  String get gender {
+    return Intl.message(
+      'Gender',
+      name: 'gender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please select a city`
+  String get pleaseSelectCity {
+    return Intl.message(
+      'Please select a city',
+      name: 'pleaseSelectCity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Gender`
+  String get invalidGender {
+    return Intl.message(
+      'Invalid Gender',
+      name: 'invalidGender',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid Relation`
+  String get invalidRelation {
+    return Intl.message(
+      'Invalid Relation',
+      name: 'invalidRelation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Save Changes`
+  String get saveChanges {
+    return Intl.message(
+      'Save Changes',
+      name: 'saveChanges',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Do you really want to delete?`
+  String get alertTxtDelete {
+    return Intl.message(
+      'Do you really want to delete?',
+      name: 'alertTxtDelete',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Yes`
+  String get yes {
+    return Intl.message(
+      'Yes',
+      name: 'yes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No`
+  String get no {
+    return Intl.message(
+      'No',
+      name: 'no',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

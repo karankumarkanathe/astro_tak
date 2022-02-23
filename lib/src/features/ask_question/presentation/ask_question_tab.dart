@@ -14,9 +14,7 @@ class AskQuestionTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<AskQuestionBloc, AskQuestionState>(
-      listener: (context, state) {
-        print(state.selectedCategory);
-      },
+      listener: (context, state) {},
       builder: (context, state) {
         return Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -192,7 +190,7 @@ class AskQuestionTab extends StatelessWidget {
               style: Theme.of(context)
                   .textTheme
                   .headline6!
-                  .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+                  .copyWith(color: Colors.white, fontWeight: FontWeight.w400),
             ),
             ElevatedButton(
                 style: ButtonStyle(

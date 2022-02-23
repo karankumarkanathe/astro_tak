@@ -9,7 +9,6 @@ class AskQuestionRepositoryImpl implements AskQuestionRepository {
     var baseClient = BaseClient().dio;
     try {
       var response = await baseClient.get(APIs.getQuestionCategory);
-      print(response);
       QuestionCategoryResponse questionCategoryResponse =
           QuestionCategoryResponse.fromJson(response.data);
       if (questionCategoryResponse.success == true) {

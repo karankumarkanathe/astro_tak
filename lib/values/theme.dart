@@ -23,6 +23,9 @@ class AppTheme {
         floatingActionButtonTheme: originalTheme.floatingActionButtonTheme
             .copyWith(backgroundColor: primaryColor),
         progressIndicatorTheme: originalTheme.progressIndicatorTheme
-            .copyWith(color: primaryColor, linearTrackColor: Colors.white));
+            .copyWith(color: primaryColor, linearTrackColor: Colors.white),
+        tabBarTheme: originalTheme.tabBarTheme.copyWith(
+          labelColor: primaryColor,
+        ));
   }
 }
